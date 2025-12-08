@@ -1,0 +1,15 @@
+{
+  "default": {
+    "template": "============================\n  TASK #{ticket_num}\n  {timestamp}\n============================\n\n{wrapped_task}\n\n----------------------------\n",
+    "width": 32
+  },
+  "maintenance": {
+    "template": "=== MAINTENANCE #{ticket_num} ===\n{timestamp}\n\n{wrapped_task}\n\n----------------------------\n",
+    "width": 32
+  },
+  "short": {
+    "template": "TASK #{ticket_num} @ {timestamp}\n\n{wrapped_task}\n",
+    "width": 40
+  }
+}
+
