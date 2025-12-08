@@ -1,0 +1,288 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.0"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "mcp20.ppd"
+*Manufacturer:          "STAR"
+*Product:               "(MCP20)"
+*1284DeviceID:          "MFG:Star;CMD:STAR;MDL:MCP20 (STR-001);CLS:PRINTER;"
+*cupsVersion:           1.3
+*cupsManualCopies:      True
+*cupsModelNumber:       20
+*cupsFilter:            "application/vnd.cups-raster 0 rastertostarm"
+*ModelName:             "MCP20"
+*ShortNickName:         "MCP20"
+*NickName:              "Star MCP20"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "3"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     True
+*TTRasterizer:          Type42
+*cupsSNMPSupplies:      False
+*cupsIPPReason com.star-paper_out_error/Star Printer is out of paper: ""
+
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X48MMY200MM
+
+*%PageSize Custom/Custom:                        "<</PageSize[0 0]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*% 50.8mm wide page size note
+*% 50.8mm = 2.0in * 72 = 144 points
+*% use 143 points to cause 5.0 point difference with 52.5mm paper and help CUPS matching algorithm
+*% see CUPS src - gdevcups.c - search "find matching page size"
+
+
+*PageSize X48MMY100MM/48mm * 100mm:              "<</PageSize[136 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY200MM/48mm * 200mm:              "<</PageSize[136 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY1500MM/48mm * 1500mm:            "<</PageSize[136 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X50D8MMY100MM/50.8mm * 100mm:          "<</PageSize[143 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X50D8MMY200MM/50.8mm * 200mm:          "<</PageSize[143 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X50D8MMY1500MM/50.8mm * 1500mm:        "<</PageSize[143 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY100MM/54mm * 100mm:              "<</PageSize[153 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY200MM/54mm * 200mm:              "<</PageSize[153 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY1500MM/54mm * 1500mm:            "<</PageSize[153 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+
+*% Zoom resolution calculation note
+*% A4 real width = 209mm = 8.23in
+*% Printer real width = 72mm = 576 dots
+*% Printer real resolution = 203dpi
+*% Rendering resolution = floor(576 dots / (8.23in * (1 - zoom)))
+*% 46 = floor(384 / (8.23 * (1 - 0)))
+*% 93 = floor(384 / (8.23 * (1 - .5)))
+
+*PageSize A4/A4 :                  "<</PageSize[595 842]/HWResolution[46 46]/ImagingBBox null>>setpagedevice"
+*PageSize Letter/Letter :          "<</PageSize[612 792]/HWResolution[45 45]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal :            "<</PageSize[612 1008]/HWResolution[45 45]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X48MMY200MM
+
+*%PageRegion Custom/Custom:                      "<</PageSize[0 0]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*PageRegion X48MMY100MM/48mm * 100mm:            "<</PageSize[136 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY200MM/48mm * 200mm:            "<</PageSize[136 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY1500MM/48mm * 1500mm:          "<</PageSize[136 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X50D8MMY100MM/50.8mm * 100mm:        "<</PageSize[143 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X50D8MMY200MM/50.8mm * 200mm:        "<</PageSize[143 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X50D8MMY1500MM/50.8mm * 1500mm:      "<</PageSize[143 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY100MM/54mm * 100mm:            "<</PageSize[153 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY200MM/54mm * 200mm:            "<</PageSize[153 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY1500MM/54mm * 1500mm:          "<</PageSize[153 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+
+*PageRegion A4/A4 :                "<</PageSize[595 842]/HWResolution[46 46]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter/Letter :        "<</PageSize[612 792]/HWResolution[45 45]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal :          "<</PageSize[612 1008]/HWResolution[45 45]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X48MMY200MM
+
+*%ImageableArea Custom:              "0.0 0.0 0.0 0.0"
+
+*ImageableArea X48MMY100MM:         "0.0 0.0 136.0 283.0"
+*ImageableArea X48MMY200MM:         "0.0 0.0 136.0 566.0"
+*ImageableArea X48MMY1500MM:        "0.0 0.0 136.0 4251.0"
+*ImageableArea X50D8MMY100MM:       "0.0 0.0 143.0 283.0"
+*ImageableArea X50D8MMY200MM:       "0.0 0.0 143.0 566.0"
+*ImageableArea X50D8MMY1500MM:      "0.0 0.0 143.0 4251.0"
+*ImageableArea X54MMY100MM:         "0.0 0.0 153.0 283.0"
+*ImageableArea X54MMY200MM:         "0.0 0.0 153.0 566.0"
+*ImageableArea X54MMY1500MM:        "0.0 0.0 153.0 4251.0"
+
+*ImageableArea A4:                  "0.0 0.0 595.0 842.0"
+*ImageableArea Letter:              "0.0 0.0 612.0 792.0"
+*ImageableArea Legal:               "0.0 0.0 612.0 1008.0"
+
+*DefaultPaperDimension: X48MMY200MM
+
+*%PaperDimension Custom:             "0 0"
+
+*PaperDimension X48MMY100MM:        "136 283"
+*PaperDimension X48MMY200MM:        "136 566"
+*PaperDimension X48MMY1500MM:       "136 4251"
+*PaperDimension X50D8MMY100MM:      "143 283"
+*PaperDimension X50D8MMY200MM:      "143 566"
+*PaperDimension X50D8MMY1500MM:     "143 4251"
+*PaperDimension X54MMY100MM:        "153 283"
+*PaperDimension X54MMY200MM:        "153 566"
+*PaperDimension X54MMY1500MM:       "153 4251"
+
+*PaperDimension A4:                 "595 842"
+*PaperDimension Letter:             "612 792"
+*PaperDimension Legal:              "612 1008"
+
+*MaxMediaWidth:  "153"
+*MaxMediaHeight: "4260"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 153
+*ParamCustomPageSize Height:       2 points 72 4260
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+*OpenGroup: OutputGroup/Output Options
+*OpenUI *PrintDensity/1. Print Density: PickOne
+*DefaultPrintDensity: 3ZERO
+*PrintDensity 3ZERO/Standard: ""
+*PrintDensity 4Plus1/+1: ""
+*PrintDensity 5Plus2/+2: ""
+*PrintDensity 6Plus3/+3: ""
+*CloseUI: *PrintDensity
+
+*OpenUI *PageType/2. Page Type: PickOne
+*DefaultPageType: 0Variable
+*PageType 0Variable/Variable Length: ""
+*PageType 1Fixed/Fixed Length: ""
+*CloseUI: *PageType
+*CloseGroup: OutputGroup
+
+*OpenGroup: CutGroup/Cut Options
+*OpenUI *PageCutType/1. Page Cut Type: PickOne
+*DefaultPageCutType: 0NoCutPage
+*PageCutType 0NoCutPage/No Cut: ""
+*PageCutType 1PartialCutPage/Partial Cut: ""
+*PageCutType 2FullCutPage/Full Cut: ""
+*CloseUI: *PageCutType
+
+*OpenUI *DocCutType/2. Document Cut Type: PickOne
+*DefaultDocCutType: 1PartialCutDoc
+*DocCutType 0NoCutDoc/No Cut: ""
+*DocCutType 1PartialCutDoc/Partial Cut: ""
+*DocCutType 2FullCutDoc/Full Cut: ""
+*CloseUI: *DocCutType
+*CloseGroup: CutGroup
+
+*OpenGroup: CashDrawerGroup/Cash Drawer Control
+*OpenUI *CashDrawerSetting/1. Cash Drawer: PickOne
+*DefaultCashDrawerSetting: 0DoNotOpenDrawers
+*CashDrawerSetting 0DoNotOpenDrawers/Do Not Open Drawers: ""
+*CashDrawerSetting 1OpenDrawer1/Open Drawer 1: ""
+*CashDrawerSetting 2OpenDrawer2/Open Drawer 2: ""
+*CashDrawerSetting 3OpenDrawer3/Open Drawers 1 and 2: ""
+*CloseUI: *CashDrawerSetting
+
+*OpenUI *CashDrawer1PulseWidth/2. Cash Drawer 1 Pulse Width: PickOne
+*DefaultCashDrawer1PulseWidth: 2Millis200
+*CashDrawer1PulseWidth 0Millis10/10 milliseconds: ""
+*CashDrawer1PulseWidth 1Millis100/100 milliseconds: ""
+*CashDrawer1PulseWidth 2Millis200/200 milliseconds: ""
+*CashDrawer1PulseWidth 3Millis300/300 milliseconds: ""
+*CashDrawer1PulseWidth 4Millis400/400 milliseconds: ""
+*CashDrawer1PulseWidth 5Millis500/500 milliseconds: ""
+*CashDrawer1PulseWidth 6Millis600/600 milliseconds: ""
+*CashDrawer1PulseWidth 7Millis700/700 milliseconds: ""
+*CashDrawer1PulseWidth 8Millis800/800 milliseconds: ""
+*CashDrawer1PulseWidth 9Millis900/900 milliseconds: ""
+*CashDrawer1PulseWidth 10Millis1000/1000 milliseconds: ""
+*CashDrawer1PulseWidth 11Millis1100/1100 milliseconds: ""
+*CashDrawer1PulseWidth 12Millis1200/1200 milliseconds: ""
+*CloseUI: *CashDrawer1PulseWidth
+*CloseGroup: CashDrawerGroup
+
+*OpenGroup: Buzzer1Group/Buzzer 1 Control
+*OpenUI *Buzzer1Setting/1. Buzzer 1: PickOne
+*DefaultBuzzer1Setting: 0NoUse
+*Buzzer1Setting 0NoUse/No Use: ""
+*Buzzer1Setting 1DocumentTop/Document Top: ""
+*Buzzer1Setting 2DocumentBtm/Document Bottom: ""
+*CloseUI: *Buzzer1Setting
+
+*OpenUI *Buzzer1OnTime/2. Buzzer 1 - On Time: PickOne
+*DefaultBuzzer1OnTime: 0Millis20
+*Buzzer1OnTime 0Millis20/20 milliseconds: ""
+*Buzzer1OnTime 1Millis40/40 milliseconds: ""
+*Buzzer1OnTime 2Millis100/100 milliseconds: ""
+*Buzzer1OnTime 3Millis200/200 milliseconds: ""
+*Buzzer1OnTime 4Millis500/500 milliseconds: ""
+*Buzzer1OnTime 5Millis1000/1000 milliseconds: ""
+*Buzzer1OnTime 6Millis2000/2000 milliseconds: ""
+*Buzzer1OnTime 7Millis5000/5000 milliseconds: ""
+*CloseUI: *Buzzer1OnTime
+
+*OpenUI *Buzzer1OffTime/3. Buzzer 1 - Off Time: PickOne
+*DefaultBuzzer1OffTime: 0Millis20
+*Buzzer1OffTime 0Millis20/20 milliseconds: ""
+*Buzzer1OffTime 1Millis40/40 milliseconds: ""
+*Buzzer1OffTime 2Millis100/100 milliseconds: ""
+*Buzzer1OffTime 3Millis200/200 milliseconds: ""
+*Buzzer1OffTime 4Millis500/500 milliseconds: ""
+*Buzzer1OffTime 5Millis1000/1000 milliseconds: ""
+*Buzzer1OffTime 6Millis2000/2000 milliseconds: ""
+*Buzzer1OffTime 7Millis5000/5000 milliseconds: ""
+*CloseUI: *Buzzer1OffTime
+
+*OpenUI *Buzzer1Repeat/4. Buzzer 1 - Repeat: PickOne
+*DefaultBuzzer1Repeat: 0Repeat1
+*Buzzer1Repeat 0Repeat1/1: ""
+*Buzzer1Repeat 1Repeat2/2: ""
+*Buzzer1Repeat 2Repeat3/3: ""
+*Buzzer1Repeat 3Repeat5/5: ""
+*Buzzer1Repeat 4Repeat10/10: ""
+*Buzzer1Repeat 5Repeat15/15: ""
+*Buzzer1Repeat 6Repeat20/20: ""
+*CloseUI: *Buzzer1Repeat
+*CloseGroup: Buzzer1Group
+
+*OpenGroup: Buzzer2Group/Buzzer 2 Control
+*OpenUI *Buzzer2Setting/1. Buzzer 2: PickOne
+*DefaultBuzzer2Setting: 0NoUse
+*Buzzer2Setting 0NoUse/No Use: ""
+*Buzzer2Setting 1DocumentTop/Document Top: ""
+*Buzzer2Setting 2DocumentBtm/Document Bottom: ""
+*CloseUI: *Buzzer2Setting
+
+*OpenUI *Buzzer2OnTime/2. Buzzer 2 - On Time: PickOne
+*DefaultBuzzer2OnTime: 0Millis20
+*Buzzer2OnTime 0Millis20/20 milliseconds: ""
+*Buzzer2OnTime 1Millis40/40 milliseconds: ""
+*Buzzer2OnTime 2Millis100/100 milliseconds: ""
+*Buzzer2OnTime 3Millis200/200 milliseconds: ""
+*Buzzer2OnTime 4Millis500/500 milliseconds: ""
+*Buzzer2OnTime 5Millis1000/1000 milliseconds: ""
+*Buzzer2OnTime 6Millis2000/2000 milliseconds: ""
+*Buzzer2OnTime 7Millis5000/5000 milliseconds: ""
+*CloseUI: *Buzzer2OnTime
+
+*OpenUI *Buzzer2OffTime/3. Buzzer 2 - Off Time: PickOne
+*DefaultBuzzer2OffTime: 0Millis20
+*Buzzer2OffTime 0Millis20/20 milliseconds: ""
+*Buzzer2OffTime 1Millis40/40 milliseconds: ""
+*Buzzer2OffTime 2Millis100/100 milliseconds: ""
+*Buzzer2OffTime 3Millis200/200 milliseconds: ""
+*Buzzer2OffTime 4Millis500/500 milliseconds: ""
+*Buzzer2OffTime 5Millis1000/1000 milliseconds: ""
+*Buzzer2OffTime 6Millis2000/2000 milliseconds: ""
+*Buzzer2OffTime 7Millis5000/5000 milliseconds: ""
+*CloseUI: *Buzzer2OffTime
+
+*OpenUI *Buzzer2Repeat/4. Buzzer 2 - Repeat: PickOne
+*DefaultBuzzer2Repeat: 0Repeat1
+*Buzzer2Repeat 0Repeat1/1: ""
+*Buzzer2Repeat 1Repeat2/2: ""
+*Buzzer2Repeat 2Repeat3/3: ""
+*Buzzer2Repeat 3Repeat5/5: ""
+*Buzzer2Repeat 4Repeat10/10: ""
+*Buzzer2Repeat 5Repeat15/15: ""
+*Buzzer2Repeat 6Repeat20/20: ""
+*CloseUI: *Buzzer2Repeat
+*CloseGroup: Buzzer2Group
+
+*OpenGroup: DataTreatmentRecoverFromErrorGroup/Data Treatment Recover From Error
+*OpenUI *DataTreatmentRecoverFromError/1. DataTreatmentRecoverFromError: PickOne
+*DefaultDataTreatmentRecoverFromError: 1ClearDataByDocumentUnit
+*DataTreatmentRecoverFromError 0NoUse/No Use: ""
+*DataTreatmentRecoverFromError 1ClearDataByDocumentUnit/Clear Data By Document Unit: ""
+*CloseUI: *DataTreatmentRecoverFromError
+*CloseGroup: DataTreatmentRecoverFromErrorGroup
+
+*% End

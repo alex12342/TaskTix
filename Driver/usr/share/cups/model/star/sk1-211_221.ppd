@@ -1,0 +1,227 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "1.0"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "sk1-211_221.ppd"
+*Manufacturer:          "STAR"
+*Product:               "(SK1-211/221)"
+*1284DeviceID:          "MFG:SANEI;CMD:STAR;MDL:SK1-211_221 (STR-001);CLS:PRINTER;"
+*cupsVersion:           1.3
+*cupsManualCopies:      True
+*cupsModelNumber:       211
+*cupsFilter:            "application/vnd.cups-raster 0 rastertostarm"
+*ModelName:             "SK1-211/221"
+*ShortNickName:         "SK1-211/221"
+*NickName:              "Sanei SK1-211/221"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "3"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     True
+*TTRasterizer:          Type42
+*cupsSNMPSupplies:      False
+*cupsIPPReason com.star-paper_out_error/Star Printer is out of paper: ""
+
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X54MMY200MM
+
+*%PageSize Custom/Custom:                        "<</PageSize[0 0]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*% 50.8mm wide page size note
+*% 50.8mm = 2.0in * 72 = 144 points
+*% use 143 points to cause 5.0 point difference with 52.5mm paper and help CUPS matching algorithm
+*% see CUPS src - gdevcups.c - search "find matching page size"
+
+
+*PageSize X54MMY100MM/54mm * 100mm:              "<</PageSize[153 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY200MM/54mm * 200mm:              "<</PageSize[153 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X54MMY1500MM/54mm * 1500mm:            "<</PageSize[153 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X56MMY100MM/56mm * 100mm:              "<</PageSize[158 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X56MMY200MM/56mm * 200mm:              "<</PageSize[158 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X56MMY1500MM/56mm * 1500mm:            "<</PageSize[158 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+
+*% Zoom resolution calculation note
+*% A4 real width = 209mm = 8.23in
+*% Printer real width = 72mm = 576 dots
+*% Printer real resolution = 203dpi
+*% Rendering resolution = floor(576 dots / (8.23in * (1 - zoom)))
+*% 46 = floor(384 / (8.23 * (1 - 0)))
+*% 93 = floor(384 / (8.23 * (1 - .5)))
+
+*PageSize A4/A4 :                  "<</PageSize[595 842]/HWResolution[46 46]/ImagingBBox null>>setpagedevice"
+*PageSize Letter/Letter :          "<</PageSize[612 792]/HWResolution[45 45]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal :            "<</PageSize[612 1008]/HWResolution[45 45]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X54MMY200MM
+
+*%PageRegion Custom/Custom:                      "<</PageSize[0 0]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*PageRegion X54MMY100MM/54mm * 100mm:            "<</PageSize[153 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY200MM/54mm * 200mm:            "<</PageSize[153 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X54MMY1500MM/54mm * 1500mm:          "<</PageSize[153 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X56MMY100MM/56mm * 100mm:            "<</PageSize[158 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X56MMY200MM/56mm * 200mm:            "<</PageSize[158 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X56MMY1500MM/56mm * 1500mm:          "<</PageSize[158 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+
+*PageRegion A4/A4 :                "<</PageSize[595 842]/HWResolution[46 46]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter/Letter :        "<</PageSize[612 792]/HWResolution[45 45]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal :          "<</PageSize[612 1008]/HWResolution[45 45]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X54MMY200MM
+
+*%ImageableArea Custom:              "0.0 0.0 0.0 0.0"
+
+*ImageableArea X54MMY100MM:         "0.0 0.0 153.0 283.0"
+*ImageableArea X54MMY200MM:         "0.0 0.0 153.0 566.0"
+*ImageableArea X54MMY1500MM:        "0.0 0.0 153.0 4251.0"
+*ImageableArea X56MMY100MM:         "0.0 0.0 158.0 283.0"
+*ImageableArea X56MMY200MM:         "0.0 0.0 158.0 566.0"
+*ImageableArea X56MMY1500MM:        "0.0 0.0 158.0 4251.0"
+
+*ImageableArea A4:                  "0.0 0.0 595.0 842.0"
+*ImageableArea Letter:              "0.0 0.0 612.0 792.0"
+*ImageableArea Legal:               "0.0 0.0 612.0 1008.0"
+
+*DefaultPaperDimension: X54MMY200MM
+
+*%PaperDimension Custom:             "0 0"
+
+*PaperDimension X54MMY100MM:        "153 283"
+*PaperDimension X54MMY200MM:        "153 566"
+*PaperDimension X54MMY1500MM:       "153 4251"
+*PaperDimension X56MMY100MM:        "158 283"
+*PaperDimension X56MMY200MM:        "158 566"
+*PaperDimension X56MMY1500MM:       "158 4251"
+
+*PaperDimension A4:                 "595 842"
+*PaperDimension Letter:             "612 792"
+*PaperDimension Legal:              "612 1008"
+
+*MaxMediaWidth:  "153"
+*MaxMediaHeight: "4260"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 153
+*ParamCustomPageSize Height:       2 points 72 4260
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+*OpenGroup: OutputGroup/Output Options
+*OpenUI *PrintDensity/1. Print Density: PickOne
+*DefaultPrintDensity: 3ZERO
+*PrintDensity 3ZERO/Standard: ""
+*PrintDensity 4Plus1/+1: ""
+*PrintDensity 5Plus2/+2: ""
+*PrintDensity 6Plus3/+3: ""
+*CloseUI: *PrintDensity
+
+*OpenUI *PrintSpeed/2. Print Speed: PickOne
+*DefaultPrintSpeed: 0_250mm
+*PrintSpeed 0_250mm/250mm: ""
+*PrintSpeed 1_220mm/220mm: ""
+*PrintSpeed 2_200mm/200mm: ""
+*PrintSpeed 3_190mm/190mm: ""
+*PrintSpeed 4_170mm/170mm: ""
+*PrintSpeed 5_150mm/150mm: ""
+*PrintSpeed 6_130mm/130mm: ""
+*PrintSpeed 7_110mm/110mm: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *PageType/3. Page Type: PickOne
+*DefaultPageType: 0Variable
+*PageType 0Variable/Variable Length: ""
+*PageType 1Fixed/Fixed Length: ""
+*PageType 2BlackMark/Black Mark: ""
+*PageType 9Label/Label: ""
+*CloseUI: *PageType
+*CloseGroup: OutputGroup
+
+*OpenGroup: BlackMarkDetectionGroup/Mark Detection
+*OpenUI *BlackMarkDetection/1. MarkDetection: PickOne
+*DefaultBlackMarkDetection: 1Disable
+*BlackMarkDetection 1Disable/Disable: ""
+*BlackMarkDetection 2Enable/Enable: ""
+*CloseUI: *BlackMarkDetection
+*CloseGroup: BlackMarkDetectionGroup
+
+*OpenGroup: CutGroup/Cut Options
+*OpenUI *PageCutType/1. Page Cut Type: PickOne
+*DefaultPageCutType: 0NoCutPage
+*PageCutType 0NoCutPage/No Cut: ""
+*PageCutType 1PartialCutPage/Partial Cut: ""
+*PageCutType 2FullCutPage/Full Cut: ""
+*CloseUI: *PageCutType
+
+*OpenUI *DocCutType/2. Document Cut Type: PickOne
+*DefaultDocCutType: 1PartialCutDoc
+*DocCutType 0NoCutDoc/No Cut: ""
+*DocCutType 1PartialCutDoc/Partial Cut: ""
+*DocCutType 2FullCutDoc/Full Cut: ""
+*CloseUI: *DocCutType
+*CloseGroup: CutGroup
+
+*OpenGroup: BezelGroup/Bezel Conrtol (Optional)
+*OpenUI *BezelHoldPrint/1. Bezel Hold Print: PickOne
+*DefaultBezelHoldPrint: 0Disable
+*BezelHoldPrint 0Disable/Disable: ""
+*BezelHoldPrint 1Enable/Enable: ""
+*CloseUI: *BezelHoldPrint
+*CloseGroup: BezelGroup
+
+*OpenGroup: LEDGroup/LED Conrtol (Optional)
+*OpenUI *LEDControl/1. LED Control: PickOne
+*DefaultLEDControl: 0Disable
+*LEDControl 0Disable/Disable: ""
+*LEDControl 1PrintingLEDEnable/Printing: ""
+*LEDControl 2ErrorLEDEnable/Error: ""
+*LEDControl 3PrintingAndErrorLEDEnable/Printing + Error: ""
+*LEDControl 4PrintingAndErrorAndIdleLEDEnable/Printing + Error + Idle: ""
+*CloseUI: *LEDControl
+
+*OpenUI *PrintingLEDInterval/2. Printing LED Interval: PickOne
+*DefaultPrintingLEDInterval: 0PrintingLEDDefault
+*PrintingLEDInterval 0PrintingLEDDefault/Default (100 millisec): ""
+*PrintingLEDInterval 1PrintingLED200milliseconds/200 millisec: ""
+*PrintingLEDInterval 2PrintingLED500milliseconds/500 millisec: ""
+*PrintingLEDInterval 3PrintingLED1000milliseconds/1000 millisec: ""
+*CloseUI: *PrintingLEDInterval
+
+*OpenUI *ErrorLEDInterval/3. Error LED Interval: PickOne
+*DefaultErrorLEDInterval: 0ErrorLEDDefault
+*ErrorLEDInterval 0ErrorLEDDefault/Default (100 millisec): ""
+*ErrorLEDInterval 1ErrorLED200milliseconds/200 millisec: ""
+*ErrorLEDInterval 2ErrorLED500milliseconds/500 millisec: ""
+*ErrorLEDInterval 3ErrorLED1000milliseconds/1000 millisec: ""
+*CloseUI: *ErrorLEDInterval
+
+*OpenUI *IdleLEDInterval/4. Idle LED Interval: PickOne
+*DefaultIdleLEDInterval: 0IdleLEDDefault
+*IdleLEDInterval 0IdleLEDDefault/Default (Always On): ""
+*IdleLEDInterval 1IdleLED100milliseconds/100 millisec: ""
+*IdleLEDInterval 2IdleLED200milliseconds/200 millisec: ""
+*IdleLEDInterval 3IdleLED500milliseconds/500 millisec: ""
+*IdleLEDInterval 4IdleLED1000milliseconds/1000 millisec: ""
+*CloseUI: *IdleLEDInterval
+*CloseGroup: LEDGroup
+
+*OpenGroup: DataTreatmentRecoverFromErrorGroup/Data Treatment Recover From Error
+*OpenUI *DataTreatmentRecoverFromError/1. DataTreatmentRecoverFromError: PickOne
+*DefaultDataTreatmentRecoverFromError: 1ClearDataByDocumentUnit
+*DataTreatmentRecoverFromError 0NoUse/No Use: ""
+*DataTreatmentRecoverFromError 1ClearDataByDocumentUnit/Clear Data By Document Unit: ""
+*CloseUI: *DataTreatmentRecoverFromError
+*CloseGroup: DataTreatmentRecoverFromErrorGroup
+
+*% End

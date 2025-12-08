@@ -1,0 +1,235 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "2.0"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "tsp800II.ppd"
+*Manufacturer:          "STAR"
+*Product:               "(TSP800II)"
+*1284DeviceID:          "MFG:Star;CMD:STAR;MDL:TSP847II (STR_T-001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       8002
+*cupsFilter:            "application/vnd.cups-raster 0 rastertostar"
+*ModelName:             "TSP800II"
+*ShortNickName:         "TSP800II"
+*NickName:              "Star TSP800II"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "3"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     True
+*TTRasterizer:          Type42
+*cupsSNMPSupplies:      False
+*cupsIPPReason com.star-paper_out_error/Star Printer is out of paper: ""
+
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X104MMY200MM
+
+*PageSize X104MMY30MM/104mm * 30mm:              "<</PageSize[294 85]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY40MM/104mm * 40mm:              "<</PageSize[294 113]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY50MM/104mm * 50mm:              "<</PageSize[294 141]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY60MM/104mm * 60mm:              "<</PageSize[294 170]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY70MM/104mm * 70mm:              "<</PageSize[294 198]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY80MM/104mm * 80mm:              "<</PageSize[294 226]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY90MM/104mm * 90mm:              "<</PageSize[294 255]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY100MM/104mm * 100mm:            "<</PageSize[294 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY110MM/104mm * 110mm:            "<</PageSize[294 311]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY120MM/104mm * 120mm:            "<</PageSize[294 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY130MM/104mm * 130mm:            "<</PageSize[294 368]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY140MM/104mm * 140mm:            "<</PageSize[294 396]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY150MM/104mm * 150mm:            "<</PageSize[294 425]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY160MM/104mm * 160mm:            "<</PageSize[294 453]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY170MM/104mm * 170mm:            "<</PageSize[294 481]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY180MM/104mm * 180mm:            "<</PageSize[294 510]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY190MM/104mm * 190mm:            "<</PageSize[294 538]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY200MM/104mm * 200mm:            "<</PageSize[294 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY1500MM/104mm * 1500mm:          "<</PageSize[294 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize X104MMY2000MM/104mm * 2000mm:          "<</PageSize[294 5668]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*% Zoom resolution calculation note
+*% A4 real width = 209mm = 8.23in
+*% Printer real width = 72mm = 832 dots
+*% Printer real resolution = 203dpi
+*% Rendering resolution = floor(832 dots / (8.23in * (1 - zoom)))
+*% 101 = floor(832 / (8.23 * (1 - 0)))
+*% 202 = floor(832 / (8.23 * (1 - .5)))
+
+*PageSize A4/A4 :                "<</PageSize[595 842]/HWResolution[100 100]/ImagingBBox null>>setpagedevice"
+*PageSize Letter/Letter :        "<</PageSize[612 792]/HWResolution[97 97]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal :        "<</PageSize[612 1008]/HWResolution[97 97]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X104MMY200MM
+
+*PageRegion X104MMY30MM/104mm * 30mm:              "<</PageSize[294 85]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY40MM/104mm * 40mm:              "<</PageSize[294 113]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY50MM/104mm * 50mm:              "<</PageSize[294 141]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY60MM/104mm * 60mm:              "<</PageSize[294 170]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY70MM/104mm * 70mm:              "<</PageSize[294 198]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY80MM/104mm * 80mm:              "<</PageSize[294 226]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY90MM/104mm * 90mm:              "<</PageSize[294 255]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY100MM/104mm * 100mm:            "<</PageSize[294 283]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY110MM/104mm * 110mm:            "<</PageSize[294 311]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY120MM/104mm * 120mm:            "<</PageSize[294 340]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY130MM/104mm * 130mm:            "<</PageSize[294 368]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY140MM/104mm * 140mm:            "<</PageSize[294 396]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY150MM/104mm * 150mm:            "<</PageSize[294 425]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY160MM/104mm * 160mm:            "<</PageSize[294 453]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY170MM/104mm * 170mm:            "<</PageSize[294 481]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY180MM/104mm * 180mm:            "<</PageSize[294 510]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY190MM/104mm * 190mm:            "<</PageSize[294 538]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY200MM/104mm * 200mm:            "<</PageSize[294 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY1500MM/104mm * 1500mm:          "<</PageSize[294 4251]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion X104MMY2000MM/104mm * 2000mm:          "<</PageSize[294 5668]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*PageRegion A4/A4 :                "<</PageSize[595 842]/HWResolution[100 100]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter/Letter :        "<</PageSize[612 792]/HWResolution[97 97]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal :          "<</PageSize[612 1008]/HWResolution[97 97]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X104MMY200MM
+
+*ImageableArea X104MMY30MM:          "0.0 0.0 294.0 85.0"
+*ImageableArea X104MMY40MM:          "0.0 0.0 294.0 113.0"
+*ImageableArea X104MMY50MM:          "0.0 0.0 294.0 141.0"
+*ImageableArea X104MMY60MM:          "0.0 0.0 294.0 170.0"
+*ImageableArea X104MMY70MM:          "0.0 0.0 294.0 198.0"
+*ImageableArea X104MMY80MM:          "0.0 0.0 294.0 226.0"
+*ImageableArea X104MMY90MM:          "0.0 0.0 294.0 255.0"
+*ImageableArea X104MMY100MM:         "0.0 0.0 294.0 283.0"
+*ImageableArea X104MMY110MM:         "0.0 0.0 294.0 311.0"
+*ImageableArea X104MMY120MM:         "0.0 0.0 294.0 340.0"
+*ImageableArea X104MMY130MM:         "0.0 0.0 294.0 368.0"
+*ImageableArea X104MMY140MM:         "0.0 0.0 294.0 396.0"
+*ImageableArea X104MMY150MM:         "0.0 0.0 294.0 425.0"
+*ImageableArea X104MMY160MM:         "0.0 0.0 294.0 453.0"
+*ImageableArea X104MMY170MM:         "0.0 0.0 294.0 481.0"
+*ImageableArea X104MMY180MM:         "0.0 0.0 294.0 510.0"
+*ImageableArea X104MMY190MM:         "0.0 0.0 294.0 538.0"
+*ImageableArea X104MMY200MM:         "0.0 0.0 294.0 566.0"
+*ImageableArea X104MMY1500MM:        "0.0 0.0 294.0 4251.0"
+*ImageableArea X104MMY2000MM:        "0.0 0.0 294.0 5668.0"
+
+*ImageableArea A4:                  "0.0 0.0 595.0 842.0"
+*ImageableArea Letter:              "0.0 0.0 612.0 792.0"
+*ImageableArea Legal:               "0.0 0.0 612.0 1008.0"
+
+*DefaultPaperDimension: X104MMY200MM
+
+*PaperDimension X104MMY30MM:         "294 85"
+*PaperDimension X104MMY40MM:         "294 113"
+*PaperDimension X104MMY50MM:         "294 141"
+*PaperDimension X104MMY60MM:         "294 170"
+*PaperDimension X104MMY70MM:         "294 198"
+*PaperDimension X104MMY80MM:         "294 226"
+*PaperDimension X104MMY90MM:         "294 255"
+*PaperDimension X104MMY100MM:        "294 283"
+*PaperDimension X104MMY110MM:        "294 311"
+*PaperDimension X104MMY120MM:        "294 340"
+*PaperDimension X104MMY130MM:        "294 368"
+*PaperDimension X104MMY140MM:        "294 396"
+*PaperDimension X104MMY150MM:        "294 425"
+*PaperDimension X104MMY160MM:        "294 453"
+*PaperDimension X104MMY170MM:        "294 481"
+*PaperDimension X104MMY180MM:        "294 510"
+*PaperDimension X104MMY190MM:        "294 538"
+*PaperDimension X104MMY200MM:        "294 566"
+*PaperDimension X104MMY1500MM:       "294 4251"
+*PaperDimension X104MMY2000MM:       "294 5668"
+
+*PaperDimension A4:                 "595 842"
+*PaperDimension Letter:             "612 792"
+*PaperDimension Legal:              "612 1008"
+
+
+*MaxMediaWidth:  "294"
+*MaxMediaHeight: "5670"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 294
+*ParamCustomPageSize Height:       2 points 72 5670
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+*OpenGroup: OutputGroup/Output Options
+*OpenUI *PrintSpeed/1. Print Speed: PickOne
+*DefaultPrintSpeed: 0High
+*PrintSpeed 0High/High: ""
+*PrintSpeed 1Middle/Middle: ""
+*PrintSpeed 2Low/Low: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *PageType/2. Page Type: PickOne
+*DefaultPageType: 0Variable
+*PageType 0Variable/Variable Length: ""
+*PageType 1Fixed/Fixed Length: ""
+*CloseUI: *PageType
+
+*OpenUI *TopSearch/3. Top Search: PickOne
+*DefaultTopSearch: 0Disable
+*TopSearch 0Disable/Disable: ""
+*TopSearch 1Enable/Enable: ""
+*CloseUI: *TopSearch
+*CloseGroup: OutputGroup
+
+*OpenGroup: CutGroup/Cut Options
+*OpenUI *PageCutType/1. Page Cut Type: PickOne
+*DefaultPageCutType: 0NoCutPage
+*PageCutType 0NoCutPage/No Cut: ""
+*PageCutType 1PartialCutPage/Partial Cut: ""
+*PageCutType 2FullCutPage/Full Cut: ""
+*CloseUI: *PageCutType
+
+*OpenUI *DocCutType/2. Document Cut Type: PickOne
+*DefaultDocCutType: 1PartialCutDoc
+*DocCutType 0NoCutDoc/No Cut: ""
+*DocCutType 1PartialCutDoc/Partial Cut: ""
+*DocCutType 2FullCutDoc/Full Cut: ""
+*DocCutType 3TearBarDoc/Tear Bar: ""
+*CloseUI: *DocCutType
+*CloseGroup: CutGroup
+
+*OpenGroup: CashDrawerGroup/Cash Drawer Control
+*OpenUI *CashDrawerSetting/1. Cash Drawer: PickOne
+*DefaultCashDrawerSetting: 0DoNotOpenDrawers
+*CashDrawerSetting 0DoNotOpenDrawers/Do Not Open Drawers: ""
+*CashDrawerSetting 1OpenDrawer1/Open Drawer 1: ""
+*CashDrawerSetting 2OpenDrawer2/Open Drawer 2: ""
+*CashDrawerSetting 3OpenDrawer3/Open Drawers 1 and 2: ""
+*CloseUI: *CashDrawerSetting
+
+*OpenUI *CashDrawer1PulseWidth/2. Cash Drawer 1 Pulse Width: PickOne
+*DefaultCashDrawer1PulseWidth: 2Millis200
+*CashDrawer1PulseWidth 0Millis10/10 milliseconds: ""
+*CashDrawer1PulseWidth 1Millis100/100 milliseconds: ""
+*CashDrawer1PulseWidth 2Millis200/200 milliseconds: ""
+*CashDrawer1PulseWidth 3Millis300/300 milliseconds: ""
+*CashDrawer1PulseWidth 4Millis400/400 milliseconds: ""
+*CashDrawer1PulseWidth 5Millis500/500 milliseconds: ""
+*CashDrawer1PulseWidth 6Millis600/600 milliseconds: ""
+*CashDrawer1PulseWidth 7Millis700/700 milliseconds: ""
+*CashDrawer1PulseWidth 8Millis800/800 milliseconds: ""
+*CashDrawer1PulseWidth 9Millis900/900 milliseconds: ""
+*CashDrawer1PulseWidth 10Millis1000/1000 milliseconds: ""
+*CashDrawer1PulseWidth 11Millis1100/1100 milliseconds: ""
+*CashDrawer1PulseWidth 12Millis1200/1200 milliseconds: ""
+*CloseUI: *CashDrawer1PulseWidth
+*CloseGroup: CashDrawerGroup
+
+*OpenGroup: DataTreatmentRecoverFromErrorGroup/Data Treatment Recover From Error
+*OpenUI *DataTreatmentRecoverFromError/1. DataTreatmentRecoverFromError: PickOne
+*DefaultDataTreatmentRecoverFromError: 1ClearDataByDocumentUnit
+*DataTreatmentRecoverFromError 0NoUse/No Use: ""
+*DataTreatmentRecoverFromError 1ClearDataByDocumentUnit/Clear Data By Document Unit: ""
+*CloseUI: *DataTreatmentRecoverFromError
+*CloseGroup: DataTreatmentRecoverFromErrorGroup
+
+*% End

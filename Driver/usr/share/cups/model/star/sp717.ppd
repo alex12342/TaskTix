@@ -1,0 +1,548 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "2.0"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "sp717.ppd"
+*Manufacturer:          "STAR"
+*Product:               "(SP717)"
+*1284DeviceID:          "MFG:Star;CMD:STAR;MDL:SP717 (STR-001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       717
+*cupsFilter:            "application/vnd.cups-raster 0 rastertostarlm"
+*ModelName:             "SP717 Tear Bar 18wire"
+*ShortNickName:         "SP700 Tear Bar (SP717)"
+*NickName:              "Star SP700 Tear Bar (SP717)"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "3"
+*ColorDevice:	        False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     True
+*TTRasterizer:          Type42
+*cupsSNMPSupplies:      False
+*cupsIPPReason com.star-paper_out_error/Star Printer is out of paper: ""
+
+
+*OpenUI *PageSize: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X63MMY200MM
+
+*PageSize X45MMY30MM/45mm * 30mm:          "<</PageSize[127 85]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY40MM/45mm * 40mm:          "<</PageSize[127 113]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY50MM/45mm * 50mm:          "<</PageSize[127 141]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY60MM/45mm * 60mm:          "<</PageSize[127 170]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY70MM/45mm * 70mm:          "<</PageSize[127 198]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY80MM/45mm * 80mm:          "<</PageSize[127 226]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY90MM/45mm * 90mm:          "<</PageSize[127 255]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY100MM/45mm * 100mm:        "<</PageSize[127 283]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY110MM/45mm * 110mm:        "<</PageSize[127 311]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY120MM/45mm * 120mm:        "<</PageSize[127 340]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY130MM/45mm * 130mm:        "<</PageSize[127 368]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY140MM/45mm * 140mm:        "<</PageSize[127 396]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY150MM/45mm * 150mm:        "<</PageSize[127 425]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY160MM/45mm * 160mm:        "<</PageSize[127 453]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY170MM/45mm * 170mm:        "<</PageSize[127 481]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY180MM/45mm * 180mm:        "<</PageSize[127 510]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY190MM/45mm * 190mm:        "<</PageSize[127 538]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY200MM/45mm * 200mm:        "<</PageSize[127 566]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY1500MM/45mm * 1500mm:      "<</PageSize[127 4251]/ImagingBBox null>>setpagedevice"
+*PageSize X45MMY2000MM/45mm * 2000mm:      "<</PageSize[127 5668]/ImagingBBox null>>setpagedevice"
+
+*PageSize X48MMY30MM/48mm * 30mm:          "<</PageSize[136 85]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY40MM/48mm * 40mm:          "<</PageSize[136 113]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY50MM/48mm * 50mm:          "<</PageSize[136 141]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY60MM/48mm * 60mm:          "<</PageSize[136 170]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY70MM/48mm * 70mm:          "<</PageSize[136 198]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY80MM/48mm * 80mm:          "<</PageSize[136 226]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY90MM/48mm * 90mm:          "<</PageSize[136 255]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY100MM/48mm * 100mm:        "<</PageSize[136 283]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY110MM/48mm * 110mm:        "<</PageSize[136 311]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY120MM/48mm * 120mm:        "<</PageSize[136 340]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY130MM/48mm * 130mm:        "<</PageSize[136 368]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY140MM/48mm * 140mm:        "<</PageSize[136 396]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY150MM/48mm * 150mm:        "<</PageSize[136 425]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY160MM/48mm * 160mm:        "<</PageSize[136 453]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY170MM/48mm * 170mm:        "<</PageSize[136 481]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY180MM/48mm * 180mm:        "<</PageSize[136 510]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY190MM/48mm * 190mm:        "<</PageSize[136 538]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY200MM/48mm * 200mm:        "<</PageSize[136 566]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY1500MM/48mm * 1500mm:      "<</PageSize[136 4251]/ImagingBBox null>>setpagedevice"
+*PageSize X48MMY2000MM/48mm * 2000mm:      "<</PageSize[136 5668]/ImagingBBox null>>setpagedevice"
+
+*PageSize X60MMY30MM/60mm * 30mm:          "<</PageSize[170 85]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY40MM/60mm * 40mm:          "<</PageSize[170 113]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY50MM/60mm * 50mm:          "<</PageSize[170 141]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY60MM/60mm * 60mm:          "<</PageSize[170 170]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY70MM/60mm * 70mm:          "<</PageSize[170 198]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY80MM/60mm * 80mm:          "<</PageSize[170 226]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY90MM/60mm * 90mm:          "<</PageSize[170 255]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY100MM/60mm * 100mm:        "<</PageSize[170 283]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY110MM/60mm * 110mm:        "<</PageSize[170 311]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY120MM/60mm * 120mm:        "<</PageSize[170 340]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY130MM/60mm * 130mm:        "<</PageSize[170 368]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY140MM/60mm * 140mm:        "<</PageSize[170 396]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY150MM/60mm * 150mm:        "<</PageSize[170 425]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY160MM/60mm * 160mm:        "<</PageSize[170 453]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY170MM/60mm * 170mm:        "<</PageSize[170 481]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY180MM/60mm * 180mm:        "<</PageSize[170 510]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY190MM/60mm * 190mm:        "<</PageSize[170 538]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY200MM/60mm * 200mm:        "<</PageSize[170 566]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY1500MM/60mm * 1500mm:      "<</PageSize[170 4251]/ImagingBBox null>>setpagedevice"
+*PageSize X60MMY2000MM/60mm * 2000mm:      "<</PageSize[170 5668]/ImagingBBox null>>setpagedevice"
+
+*PageSize X63MMY30MM/63mm * 30mm:          "<</PageSize[178 85]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY40MM/63mm * 40mm:          "<</PageSize[178 113]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY50MM/63mm * 50mm:          "<</PageSize[178 141]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY60MM/63mm * 60mm:          "<</PageSize[178 170]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY70MM/63mm * 70mm:          "<</PageSize[178 198]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY80MM/63mm * 80mm:          "<</PageSize[178 226]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY90MM/63mm * 90mm:          "<</PageSize[178 255]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY100MM/63mm * 100mm:        "<</PageSize[178 283]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY110MM/63mm * 110mm:        "<</PageSize[178 311]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY120MM/63mm * 120mm:        "<</PageSize[178 340]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY130MM/63mm * 130mm:        "<</PageSize[178 368]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY140MM/63mm * 140mm:        "<</PageSize[178 396]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY150MM/63mm * 150mm:        "<</PageSize[178 425]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY160MM/63mm * 160mm:        "<</PageSize[178 453]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY170MM/63mm * 170mm:        "<</PageSize[178 481]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY180MM/63mm * 180mm:        "<</PageSize[178 510]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY190MM/63mm * 190mm:        "<</PageSize[178 538]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY200MM/63mm * 200mm:        "<</PageSize[178 566]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY1500MM/63mm * 1500mm:      "<</PageSize[178 4251]/ImagingBBox null>>setpagedevice"
+*PageSize X63MMY2000MM/63mm * 2000mm:      "<</PageSize[178 5668]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X63MMY200MM
+
+*PageRegion X45MMY30MM/45mm * 30mm:          "<</PageSize[127 85]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY40MM/45mm * 40mm:          "<</PageSize[127 113]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY50MM/45mm * 50mm:          "<</PageSize[127 141]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY60MM/45mm * 60mm:          "<</PageSize[127 170]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY70MM/45mm * 70mm:          "<</PageSize[127 198]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY80MM/45mm * 80mm:          "<</PageSize[127 226]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY90MM/45mm * 90mm:          "<</PageSize[127 255]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY100MM/45mm * 100mm:        "<</PageSize[127 283]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY110MM/45mm * 110mm:        "<</PageSize[127 311]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY120MM/45mm * 120mm:        "<</PageSize[127 340]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY130MM/45mm * 130mm:        "<</PageSize[127 368]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY140MM/45mm * 140mm:        "<</PageSize[127 396]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY150MM/45mm * 150mm:        "<</PageSize[127 425]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY160MM/45mm * 160mm:        "<</PageSize[127 453]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY170MM/45mm * 170mm:        "<</PageSize[127 481]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY180MM/45mm * 180mm:        "<</PageSize[127 510]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY190MM/45mm * 190mm:        "<</PageSize[127 538]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY200MM/45mm * 200mm:        "<</PageSize[127 566]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY1500MM/45mm * 1500mm:      "<</PageSize[127 4251]/ImagingBBox null>>setpagedevice"
+*PageRegion X45MMY2000MM/45mm * 2000mm:      "<</PageSize[127 5668]/ImagingBBox null>>setpagedevice"
+
+*PageRegion X48MMY30MM/48mm * 30mm:          "<</PageSize[136 85]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY40MM/48mm * 40mm:          "<</PageSize[136 113]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY50MM/48mm * 50mm:          "<</PageSize[136 141]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY60MM/48mm * 60mm:          "<</PageSize[136 170]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY70MM/48mm * 70mm:          "<</PageSize[136 198]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY80MM/48mm * 80mm:          "<</PageSize[136 226]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY90MM/48mm * 90mm:          "<</PageSize[136 255]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY100MM/48mm * 100mm:        "<</PageSize[136 283]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY110MM/48mm * 110mm:        "<</PageSize[136 311]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY120MM/48mm * 120mm:        "<</PageSize[136 340]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY130MM/48mm * 130mm:        "<</PageSize[136 368]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY140MM/48mm * 140mm:        "<</PageSize[136 396]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY150MM/48mm * 150mm:        "<</PageSize[136 425]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY160MM/48mm * 160mm:        "<</PageSize[136 453]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY170MM/48mm * 170mm:        "<</PageSize[136 481]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY180MM/48mm * 180mm:        "<</PageSize[136 510]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY190MM/48mm * 190mm:        "<</PageSize[136 538]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY200MM/48mm * 200mm:        "<</PageSize[136 566]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY1500MM/48mm * 1500mm:      "<</PageSize[136 4251]/ImagingBBox null>>setpagedevice"
+*PageRegion X48MMY2000MM/48mm * 2000mm:      "<</PageSize[136 5668]/ImagingBBox null>>setpagedevice"
+
+*PageRegion X60MMY30MM/60mm * 30mm:          "<</PageSize[170 85]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY40MM/60mm * 40mm:          "<</PageSize[170 113]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY50MM/60mm * 50mm:          "<</PageSize[170 141]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY60MM/60mm * 60mm:          "<</PageSize[170 170]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY70MM/60mm * 70mm:          "<</PageSize[170 198]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY80MM/60mm * 80mm:          "<</PageSize[170 226]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY90MM/60mm * 90mm:          "<</PageSize[170 255]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY100MM/60mm * 100mm:        "<</PageSize[170 283]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY110MM/60mm * 110mm:        "<</PageSize[170 311]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY120MM/60mm * 120mm:        "<</PageSize[170 340]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY130MM/60mm * 130mm:        "<</PageSize[170 368]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY140MM/60mm * 140mm:        "<</PageSize[170 396]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY150MM/60mm * 150mm:        "<</PageSize[170 425]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY160MM/60mm * 160mm:        "<</PageSize[170 453]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY170MM/60mm * 170mm:        "<</PageSize[170 481]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY180MM/60mm * 180mm:        "<</PageSize[170 510]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY190MM/60mm * 190mm:        "<</PageSize[170 538]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY200MM/60mm * 200mm:        "<</PageSize[170 566]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY1500MM/60mm * 1500mm:      "<</PageSize[170 4251]/ImagingBBox null>>setpagedevice"
+*PageRegion X60MMY2000MM/60mm * 2000mm:      "<</PageSize[170 5668]/ImagingBBox null>>setpagedevice"
+
+*PageRegion X63MMY30MM/63mm * 30mm:          "<</PageSize[178 85]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY40MM/63mm * 40mm:          "<</PageSize[178 113]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY50MM/63mm * 50mm:          "<</PageSize[178 141]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY60MM/63mm * 60mm:          "<</PageSize[178 170]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY70MM/63mm * 70mm:          "<</PageSize[178 198]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY80MM/63mm * 80mm:          "<</PageSize[178 226]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY90MM/63mm * 90mm:          "<</PageSize[178 255]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY100MM/63mm * 100mm:        "<</PageSize[178 283]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY110MM/63mm * 110mm:        "<</PageSize[178 311]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY120MM/63mm * 120mm:        "<</PageSize[178 340]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY130MM/63mm * 130mm:        "<</PageSize[178 368]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY140MM/63mm * 140mm:        "<</PageSize[178 396]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY150MM/63mm * 150mm:        "<</PageSize[178 425]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY160MM/63mm * 160mm:        "<</PageSize[178 453]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY170MM/63mm * 170mm:        "<</PageSize[178 481]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY180MM/63mm * 180mm:        "<</PageSize[178 510]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY190MM/63mm * 190mm:        "<</PageSize[178 538]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY200MM/63mm * 200mm:        "<</PageSize[178 566]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY1500MM/63mm * 1500mm:      "<</PageSize[178 4251]/ImagingBBox null>>setpagedevice"
+*PageRegion X63MMY2000MM/63mm * 2000mm:      "<</PageSize[178 5668]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X63MMY200MM
+*ImageableArea X45MMY30MM:          "0.0 0.0 127.0 85.0"
+*ImageableArea X45MMY40MM:          "0.0 0.0 127.0 113.0"
+*ImageableArea X45MMY50MM:          "0.0 0.0 127.0 141.0"
+*ImageableArea X45MMY60MM:          "0.0 0.0 127.0 170.0"
+*ImageableArea X45MMY70MM:          "0.0 0.0 127.0 198.0"
+*ImageableArea X45MMY80MM:          "0.0 0.0 127.0 226.0"
+*ImageableArea X45MMY90MM:          "0.0 0.0 127.0 255.0"
+*ImageableArea X45MMY100MM:         "0.0 0.0 127.0 283.0"
+*ImageableArea X45MMY110MM:         "0.0 0.0 127.0 311.0"
+*ImageableArea X45MMY120MM:         "0.0 0.0 127.0 340.0"
+*ImageableArea X45MMY130MM:         "0.0 0.0 127.0 368.0"
+*ImageableArea X45MMY140MM:         "0.0 0.0 127.0 396.0"
+*ImageableArea X45MMY150MM:         "0.0 0.0 127.0 425.0"
+*ImageableArea X45MMY160MM:         "0.0 0.0 127.0 453.0"
+*ImageableArea X45MMY170MM:         "0.0 0.0 127.0 481.0"
+*ImageableArea X45MMY180MM:         "0.0 0.0 127.0 510.0"
+*ImageableArea X45MMY190MM:         "0.0 0.0 127.0 538.0"
+*ImageableArea X45MMY200MM:         "0.0 0.0 127.0 566.0"
+*ImageableArea X45MMY1500MM:        "0.0 0.0 127.0 4251.0"
+*ImageableArea X45MMY2000MM:        "0.0 0.0 127.0 5668.0"
+
+*ImageableArea X48MMY30MM:          "0.0 0.0 136.0 85.0"
+*ImageableArea X48MMY40MM:          "0.0 0.0 136.0 113.0"
+*ImageableArea X48MMY50MM:          "0.0 0.0 136.0 141.0"
+*ImageableArea X48MMY60MM:          "0.0 0.0 136.0 170.0"
+*ImageableArea X48MMY70MM:          "0.0 0.0 136.0 198.0"
+*ImageableArea X48MMY80MM:          "0.0 0.0 136.0 226.0"
+*ImageableArea X48MMY90MM:          "0.0 0.0 136.0 255.0"
+*ImageableArea X48MMY100MM:         "0.0 0.0 136.0 283.0"
+*ImageableArea X48MMY110MM:         "0.0 0.0 136.0 311.0"
+*ImageableArea X48MMY120MM:         "0.0 0.0 136.0 340.0"
+*ImageableArea X48MMY130MM:         "0.0 0.0 136.0 368.0"
+*ImageableArea X48MMY140MM:         "0.0 0.0 136.0 396.0"
+*ImageableArea X48MMY150MM:         "0.0 0.0 136.0 425.0"
+*ImageableArea X48MMY160MM:         "0.0 0.0 136.0 453.0"
+*ImageableArea X48MMY170MM:         "0.0 0.0 136.0 481.0"
+*ImageableArea X48MMY180MM:         "0.0 0.0 136.0 510.0"
+*ImageableArea X48MMY190MM:         "0.0 0.0 136.0 538.0"
+*ImageableArea X48MMY200MM:         "0.0 0.0 136.0 566.0"
+*ImageableArea X48MMY1500MM:        "0.0 0.0 136.0 4251.0"
+*ImageableArea X48MMY2000MM:        "0.0 0.0 136.0 5668.0"
+
+*ImageableArea X60MMY30MM:          "0.0 0.0 170.0 85.0"
+*ImageableArea X60MMY40MM:          "0.0 0.0 170.0 113.0"
+*ImageableArea X60MMY50MM:          "0.0 0.0 170.0 141.0"
+*ImageableArea X60MMY60MM:          "0.0 0.0 170.0 170.0"
+*ImageableArea X60MMY70MM:          "0.0 0.0 170.0 198.0"
+*ImageableArea X60MMY80MM:          "0.0 0.0 170.0 226.0"
+*ImageableArea X60MMY90MM:          "0.0 0.0 170.0 255.0"
+*ImageableArea X60MMY100MM:         "0.0 0.0 170.0 283.0"
+*ImageableArea X60MMY110MM:         "0.0 0.0 170.0 311.0"
+*ImageableArea X60MMY120MM:         "0.0 0.0 170.0 340.0"
+*ImageableArea X60MMY130MM:         "0.0 0.0 170.0 368.0"
+*ImageableArea X60MMY140MM:         "0.0 0.0 170.0 396.0"
+*ImageableArea X60MMY150MM:         "0.0 0.0 170.0 425.0"
+*ImageableArea X60MMY160MM:         "0.0 0.0 170.0 453.0"
+*ImageableArea X60MMY170MM:         "0.0 0.0 170.0 481.0"
+*ImageableArea X60MMY180MM:         "0.0 0.0 170.0 510.0"
+*ImageableArea X60MMY190MM:         "0.0 0.0 170.0 538.0"
+*ImageableArea X60MMY200MM:         "0.0 0.0 170.0 566.0"
+*ImageableArea X60MMY1500MM:        "0.0 0.0 170.0 4251.0"
+*ImageableArea X60MMY2000MM:        "0.0 0.0 170.0 5668.0"
+
+*ImageableArea X63MMY30MM:          "0.0 0.0 178.0 85.0"
+*ImageableArea X63MMY40MM:          "0.0 0.0 178.0 113.0"
+*ImageableArea X63MMY50MM:          "0.0 0.0 178.0 141.0"
+*ImageableArea X63MMY60MM:          "0.0 0.0 178.0 170.0"
+*ImageableArea X63MMY70MM:          "0.0 0.0 178.0 198.0"
+*ImageableArea X63MMY80MM:          "0.0 0.0 178.0 226.0"
+*ImageableArea X63MMY90MM:          "0.0 0.0 178.0 255.0"
+*ImageableArea X63MMY100MM:         "0.0 0.0 178.0 283.0"
+*ImageableArea X63MMY110MM:         "0.0 0.0 178.0 311.0"
+*ImageableArea X63MMY120MM:         "0.0 0.0 178.0 340.0"
+*ImageableArea X63MMY130MM:         "0.0 0.0 178.0 368.0"
+*ImageableArea X63MMY140MM:         "0.0 0.0 178.0 396.0"
+*ImageableArea X63MMY150MM:         "0.0 0.0 178.0 425.0"
+*ImageableArea X63MMY160MM:         "0.0 0.0 178.0 453.0"
+*ImageableArea X63MMY170MM:         "0.0 0.0 178.0 481.0"
+*ImageableArea X63MMY180MM:         "0.0 0.0 178.0 510.0"
+*ImageableArea X63MMY190MM:         "0.0 0.0 178.0 538.0"
+*ImageableArea X63MMY200MM:         "0.0 0.0 178.0 566.0"
+*ImageableArea X63MMY1500MM:        "0.0 0.0 178.0 4251.0"
+*ImageableArea X63MMY2000MM:        "0.0 0.0 178.0 5668.0"
+
+*DefaultPaperDimension: X63MMY200MM
+*PaperDimension X45MMY30MM:         "127 85"
+*PaperDimension X45MMY40MM:         "127 113"
+*PaperDimension X45MMY50MM:         "127 141"
+*PaperDimension X45MMY60MM:         "127 170"
+*PaperDimension X45MMY70MM:         "127 198"
+*PaperDimension X45MMY80MM:         "127 226"
+*PaperDimension X45MMY90MM:         "127 255"
+*PaperDimension X45MMY100MM:        "127 283"
+*PaperDimension X45MMY110MM:        "127 311"
+*PaperDimension X45MMY120MM:        "127 340"
+*PaperDimension X45MMY130MM:        "127 368"
+*PaperDimension X45MMY140MM:        "127 396"
+*PaperDimension X45MMY150MM:        "127 425"
+*PaperDimension X45MMY160MM:        "127 453"
+*PaperDimension X45MMY170MM:        "127 481"
+*PaperDimension X45MMY180MM:        "127 510"
+*PaperDimension X45MMY190MM:        "127 538"
+*PaperDimension X45MMY200MM:        "127 566"
+*PaperDimension X45MMY1500MM:       "127 4251"
+*PaperDimension X45MMY2000MM:       "127 5668"
+
+*PaperDimension X48MMY30MM:         "136 85"
+*PaperDimension X48MMY40MM:         "136 113"
+*PaperDimension X48MMY50MM:         "136 141"
+*PaperDimension X48MMY60MM:         "136 170"
+*PaperDimension X48MMY70MM:         "136 198"
+*PaperDimension X48MMY80MM:         "136 226"
+*PaperDimension X48MMY90MM:         "136 255"
+*PaperDimension X48MMY100MM:        "136 283"
+*PaperDimension X48MMY110MM:        "136 311"
+*PaperDimension X48MMY120MM:        "136 340"
+*PaperDimension X48MMY130MM:        "136 368"
+*PaperDimension X48MMY140MM:        "136 396"
+*PaperDimension X48MMY150MM:        "136 425"
+*PaperDimension X48MMY160MM:        "136 453"
+*PaperDimension X48MMY170MM:        "136 481"
+*PaperDimension X48MMY180MM:        "136 510"
+*PaperDimension X48MMY190MM:        "136 538"
+*PaperDimension X48MMY200MM:        "136 566"
+*PaperDimension X48MMY1500MM:       "136 4251"
+*PaperDimension X48MMY2000MM:       "136 5668"
+
+*PaperDimension X60MMY30MM:         "170 85"
+*PaperDimension X60MMY40MM:         "170 113"
+*PaperDimension X60MMY50MM:         "170 141"
+*PaperDimension X60MMY60MM:         "170 170"
+*PaperDimension X60MMY70MM:         "170 198"
+*PaperDimension X60MMY80MM:         "170 226"
+*PaperDimension X60MMY90MM:         "170 255"
+*PaperDimension X60MMY100MM:        "170 283"
+*PaperDimension X60MMY110MM:        "170 311"
+*PaperDimension X60MMY120MM:        "170 340"
+*PaperDimension X60MMY130MM:        "170 368"
+*PaperDimension X60MMY140MM:        "170 396"
+*PaperDimension X60MMY150MM:        "170 425"
+*PaperDimension X60MMY160MM:        "170 453"
+*PaperDimension X60MMY170MM:        "170 481"
+*PaperDimension X60MMY180MM:        "170 510"
+*PaperDimension X60MMY190MM:        "170 538"
+*PaperDimension X60MMY200MM:        "170 566"
+*PaperDimension X60MMY1500MM:       "170 4251"
+*PaperDimension X60MMY2000MM:       "170 5668"
+
+*PaperDimension X63MMY30MM:         "178 85"
+*PaperDimension X63MMY40MM:         "178 113"
+*PaperDimension X63MMY50MM:         "178 141"
+*PaperDimension X63MMY60MM:         "178 170"
+*PaperDimension X63MMY70MM:         "178 198"
+*PaperDimension X63MMY80MM:         "178 226"
+*PaperDimension X63MMY90MM:         "178 255"
+*PaperDimension X63MMY100MM:        "178 283"
+*PaperDimension X63MMY110MM:        "178 311"
+*PaperDimension X63MMY120MM:        "178 340"
+*PaperDimension X63MMY130MM:        "178 368"
+*PaperDimension X63MMY140MM:        "178 396"
+*PaperDimension X63MMY150MM:        "178 425"
+*PaperDimension X63MMY160MM:        "178 453"
+*PaperDimension X63MMY170MM:        "178 481"
+*PaperDimension X63MMY180MM:        "178 510"
+*PaperDimension X63MMY190MM:        "178 538"
+*PaperDimension X63MMY200MM:        "178 566"
+*PaperDimension X63MMY1500MM:       "178 4251"
+*PaperDimension X63MMY2000MM:       "178 5668"
+
+*MaxMediaWidth:  "178"
+*MaxMediaHeight: "5670"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 178
+*ParamCustomPageSize Height:       2 points 72 5670
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+*OpenGroup: OutputGroup/Output Options
+*OpenUI *BidiPrinting/1. Bidirectional Printing: PickOne
+*DefaultBidiPrinting: 0Bidirectional
+*BidiPrinting 0Bidirectional/Bidirectional: ""
+*BidiPrinting 1Unidirectional/Unidirectional: ""
+*CloseUI: *BidiPrinting
+
+*OpenUI *PageType/2. Page Type: PickOne
+*DefaultPageType: 0Variable
+*PageType 0Variable/Variable Length: ""
+*PageType 1Fixed/Fixed Length: ""
+*CloseUI: *PageType
+
+*OpenUI *Resolution/3. Resolution: PickOne
+*OrderDependency: 20 AnySetup *Resolution
+*DefaultResolution: 170x72dpi
+*Resolution 170x72dpi/170 x 72 DPI:	"<</HWResolution[170 72]/cupsCompression 0>>setpagedevice"
+*Resolution 85x72dpi/85 x 72 DPI:	"<</HWResolution[85 72]/cupsCompression 0>>setpagedevice"
+*CloseUI: *Resolution
+*CloseGroup: OutputGroup
+
+*OpenGroup: CutGroup/Feed Options
+*OpenUI *PageCutType/1. Page Feed Type: PickOne
+*DefaultPageCutType: 0NoActionPage
+*PageCutType 0NoActionPage/No Feed: ""
+*PageCutType 3TearBarPage/Tear Bar: ""
+*CloseUI: *PageCutType
+
+*OpenUI *DocCutType/2. Document Feed Type: PickOne
+*DefaultDocCutType: 3TearBarDoc
+*DocCutType 0NoActionDoc/No Feed: ""
+*DocCutType 3TearBarDoc/Tear Bar: ""
+*CloseUI: *DocCutType
+*CloseGroup: CutGroup
+
+*OpenGroup: Buzzer1Group/Buzzer 1 Control
+*OpenUI *Buzzer1Setting/1. Buzzer 1: PickOne
+*DefaultBuzzer1Setting: 0NoUse
+*Buzzer1Setting 0NoUse/No Use: ""
+*Buzzer1Setting 1DocumentTop/Document Top: ""
+*Buzzer1Setting 2DocumentBtm/Document Bottom: ""
+*CloseUI: *Buzzer1Setting
+
+*OpenUI *Buzzer1OnTime/2. Buzzer 1 - On Time: PickOne
+*DefaultBuzzer1OnTime: 0Millis20
+*Buzzer1OnTime 0Millis20/20 milliseconds: ""
+*Buzzer1OnTime 1Millis40/40 milliseconds: ""
+*Buzzer1OnTime 2Millis100/100 milliseconds: ""
+*Buzzer1OnTime 3Millis200/200 milliseconds: ""
+*Buzzer1OnTime 4Millis500/500 milliseconds: ""
+*Buzzer1OnTime 5Millis1000/1000 milliseconds: ""
+*Buzzer1OnTime 6Millis2000/2000 milliseconds: ""
+*Buzzer1OnTime 7Millis5000/5000 milliseconds: ""
+*CloseUI: *Buzzer1OnTime
+
+*OpenUI *Buzzer1OffTime/3. Buzzer 1 - Off Time: PickOne
+*DefaultBuzzer1OffTime: 0Millis20
+*Buzzer1OffTime 0Millis20/20 milliseconds: ""
+*Buzzer1OffTime 1Millis40/40 milliseconds: ""
+*Buzzer1OffTime 2Millis100/100 milliseconds: ""
+*Buzzer1OffTime 3Millis200/200 milliseconds: ""
+*Buzzer1OffTime 4Millis500/500 milliseconds: ""
+*Buzzer1OffTime 5Millis1000/1000 milliseconds: ""
+*Buzzer1OffTime 6Millis2000/2000 milliseconds: ""
+*Buzzer1OffTime 7Millis5000/5000 milliseconds: ""
+*CloseUI: *Buzzer1OffTime
+
+*OpenUI *Buzzer1Repeat/4. Buzzer 1 - Repeat: PickOne
+*DefaultBuzzer1Repeat: 0Repeat1
+*Buzzer1Repeat 0Repeat1/1: ""
+*Buzzer1Repeat 1Repeat2/2: ""
+*Buzzer1Repeat 2Repeat3/3: ""
+*Buzzer1Repeat 3Repeat5/5: ""
+*Buzzer1Repeat 4Repeat10/10: ""
+*Buzzer1Repeat 5Repeat15/15: ""
+*Buzzer1Repeat 6Repeat20/20: ""
+*CloseUI: *Buzzer1Repeat
+*CloseGroup: Buzzer1Group
+
+*OpenGroup: Buzzer2Group/Buzzer 2 Control
+*OpenUI *Buzzer2Setting/1. Buzzer 2: PickOne
+*DefaultBuzzer2Setting: 0NoUse
+*Buzzer2Setting 0NoUse/No Use: ""
+*Buzzer2Setting 1DocumentTop/Document Top: ""
+*Buzzer2Setting 2DocumentBtm/Document Bottom: ""
+*CloseUI: *Buzzer2Setting
+
+*OpenUI *Buzzer2OnTime/2. Buzzer 2 - On Time: PickOne
+*DefaultBuzzer2OnTime: 0Millis20
+*Buzzer2OnTime 0Millis20/20 milliseconds: ""
+*Buzzer2OnTime 1Millis40/40 milliseconds: ""
+*Buzzer2OnTime 2Millis100/100 milliseconds: ""
+*Buzzer2OnTime 3Millis200/200 milliseconds: ""
+*Buzzer2OnTime 4Millis500/500 milliseconds: ""
+*Buzzer2OnTime 5Millis1000/1000 milliseconds: ""
+*Buzzer2OnTime 6Millis2000/2000 milliseconds: ""
+*Buzzer2OnTime 7Millis5000/5000 milliseconds: ""
+*CloseUI: *Buzzer2OnTime
+
+*OpenUI *Buzzer2OffTime/3. Buzzer 2 - Off Time: PickOne
+*DefaultBuzzer2OffTime: 0Millis20
+*Buzzer2OffTime 0Millis20/20 milliseconds: ""
+*Buzzer2OffTime 1Millis40/40 milliseconds: ""
+*Buzzer2OffTime 2Millis100/100 milliseconds: ""
+*Buzzer2OffTime 3Millis200/200 milliseconds: ""
+*Buzzer2OffTime 4Millis500/500 milliseconds: ""
+*Buzzer2OffTime 5Millis1000/1000 milliseconds: ""
+*Buzzer2OffTime 6Millis2000/2000 milliseconds: ""
+*Buzzer2OffTime 7Millis5000/5000 milliseconds: ""
+*CloseUI: *Buzzer2OffTime
+
+*OpenUI *Buzzer2Repeat/4. Buzzer 2 - Repeat: PickOne
+*DefaultBuzzer2Repeat: 0Repeat1
+*Buzzer2Repeat 0Repeat1/1: ""
+*Buzzer2Repeat 1Repeat2/2: ""
+*Buzzer2Repeat 2Repeat3/3: ""
+*Buzzer2Repeat 3Repeat5/5: ""
+*Buzzer2Repeat 4Repeat10/10: ""
+*Buzzer2Repeat 5Repeat15/15: ""
+*Buzzer2Repeat 6Repeat20/20: ""
+*CloseUI: *Buzzer2Repeat
+*CloseGroup: Buzzer2Group
+
+*OpenGroup: CashDrawerGroup/Cash Drawer Control
+*OpenUI *CashDrawerSetting/1. Cash Drawer: PickOne
+*DefaultCashDrawerSetting: 0DoNotOpenDrawers
+*CashDrawerSetting 0DoNotOpenDrawers/Do Not Open Drawers: ""
+*CashDrawerSetting 1OpenDrawer1/Open Drawer 1: ""
+*CashDrawerSetting 2OpenDrawer2/Open Drawer 2: ""
+*CashDrawerSetting 3OpenDrawer3/Open Drawers 1 and 2: ""
+*CloseUI: *CashDrawerSetting
+
+*OpenUI *CashDrawer1PulseWidth/2. Cash Drawer 1 Pulse Width: PickOne
+*DefaultCashDrawer1PulseWidth: 2Millis200
+*CashDrawer1PulseWidth 0Millis10/10 milliseconds: ""
+*CashDrawer1PulseWidth 1Millis100/100 milliseconds: ""
+*CashDrawer1PulseWidth 2Millis200/200 milliseconds: ""
+*CashDrawer1PulseWidth 3Millis300/300 milliseconds: ""
+*CashDrawer1PulseWidth 4Millis400/400 milliseconds: ""
+*CashDrawer1PulseWidth 5Millis500/500 milliseconds: ""
+*CashDrawer1PulseWidth 6Millis600/600 milliseconds: ""
+*CashDrawer1PulseWidth 7Millis700/700 milliseconds: ""
+*CashDrawer1PulseWidth 8Millis800/800 milliseconds: ""
+*CashDrawer1PulseWidth 9Millis900/900 milliseconds: ""
+*CashDrawer1PulseWidth 10Millis1000/1000 milliseconds: ""
+*CashDrawer1PulseWidth 11Millis1100/1100 milliseconds: ""
+*CashDrawer1PulseWidth 12Millis1200/1200 milliseconds: ""
+*CloseUI: *CashDrawer1PulseWidth
+*CloseGroup: CashDrawerGroup
+
+*OpenGroup: DataTreatmentRecoverFromErrorGroup/Data Treatment Recover From Error
+*OpenUI *DataTreatmentRecoverFromError/1. DataTreatmentRecoverFromError: PickOne
+*DefaultDataTreatmentRecoverFromError: 1ClearDataByDocumentUnit
+*DataTreatmentRecoverFromError 0NoUse/No Use: ""
+*DataTreatmentRecoverFromError 1ClearDataByDocumentUnit/Clear Data By Document Unit: ""
+*CloseUI: *DataTreatmentRecoverFromError
+*CloseGroup: DataTreatmentRecoverFromErrorGroup
+
+*% End
