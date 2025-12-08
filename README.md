@@ -1,5 +1,7 @@
 # TaskTix – CUPS-Backed Ticket Printer API
 
+This is an alpha version of the project. It is functional in its current state and designed for ticket printers with 3-1/8" (80mm) width paper rolls. Additional drivers may need to be added to support your model of printer.
+
 TaskTix is a Docker container that provides:
 
 * A Flask-based HTTP API for printing tickets
