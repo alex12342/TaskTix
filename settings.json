@@ -7,9 +7,9 @@
     "template": "=== MAINTENANCE #{ticket_num} ===\n{timestamp}\n\n{wrapped_task}\n\n----------------------------\n",
     "width": 32
   },
-  "short": {
-    "template": "TASK #{ticket_num} @ {timestamp}\n\n{wrapped_task}\n",
-    "width": 40
+  "shopping_list": {
+    "template": "====== Shopping List =======\n\n{timestamp}\n\n----------------------------\n\n{wrapped_task}\n\n----------------------------\n\n",
+    "width": 32
   }
 }
 

@@ -1,0 +1,36 @@
+alias: Print Shopping List ticket
+description: "Prints all items from the 'Shopping List' todo as a single ticket"
+mode: single
+
+triggers:
+  - trigger: state
+    entity_id: input_button.print_shopping_list
+
+variables:
+  shopping_entity_id: "todo.shopping_list"
+
+actions:
+  # 1) Get all active (needs_action) items from the Shopping List
+  - action: todo.get_items
+    target:
+      entity_id: "{{ shopping_entity_id }}"
+    data:
+      status:
+        - needs_action
+    response_variable: shopping_list
+
+  # 2) Build a single text block with all item summaries, one per line
+  - action: rest_command.tasktix_print_ticket
+    data:
+      task: >
+        {% set items = shopping_list[shopping_entity_id]['items'] %}
+        {%- if items | length == 0 -%}
+        (No items in Shopping List)
+        {%- else -%}
+        {%- for item in items -%}
+        - {{ item.summary }}
+        {%- if not loop.last %}\n{% endif -%}
+        {%- endfor -%}
+        {%- endif -%}
+      ticket_type: "shopping_list"
+
