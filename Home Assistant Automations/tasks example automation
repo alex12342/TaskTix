@@ -1,0 +1,30 @@
+alias: Print ticket when new todo item is added
+description: ""
+triggers:
+  - trigger: event
+    event_type: call_service
+    event_data:
+      domain: todo
+      service: add_item
+conditions:
+  - condition: template
+    value_template: "{{ entity_id == 'todo.tasks' }}"
+  - condition: template
+    value_template: "{{ task != '' }}"
+actions:
+  - action: rest_command.tasktix_print_ticket
+    data:
+      task: "{{ task }}"
+      ticket_type: default
+mode: single
+variables:
+  raw_entity_ids: "{{ trigger.event.data.service_data.entity_id }}"
+  entity_id: |
+    {% if raw_entity_ids is list %}
+      {{ raw_entity_ids[0] }}
+    {% else %}
+      {{ raw_entity_ids }}
+    {% endif %}
+  list_name: "{{ state_attr(entity_id, 'friendly_name') }}"
+  task: "{{ (trigger.event.data.service_data.item or '') | trim }}"
+
